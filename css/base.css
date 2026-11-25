@@ -1,0 +1,35 @@
+/* base.css: estilos comunes a todas las páginas de Vortex */
+
+/* Paleta y tipografía: se cambian aquí y afectan a todo el sitio */
+:root {
+    --color-fondo: #f8faf7;
+    --color-texto: #16231c;
+    --color-acento: #0f6b52;
+    --fuente: system-ui, sans-serif;
+}
+
+/* El ancho de una caja incluye su relleno y su borde */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fuente);
+    line-height: 1.5;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+/* Enlace de accesibilidad: oculto arriba, aparece al presionar Tab */
+.skip {
+    position: absolute;
+    left: 1rem;
+    top: -3rem;
+}
+
+.skip:focus {
+    top: 1rem;
+}
